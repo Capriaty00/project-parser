@@ -1,8 +1,7 @@
 import os
 import xml.etree.ElementTree as ET
-from utils.logger import get_logger
-
-logger = get_logger(__name__)
+from project_parser.utils.logger import setup_logger
+logger = setup_logger()
 
 
 def parse_xml(file_path: str) -> dict:
